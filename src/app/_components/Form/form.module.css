@@ -1,4 +1,5 @@
 .form_container {
+    display: none;
     width: 591px;
     height: 766px;
     background-color: #fff;
