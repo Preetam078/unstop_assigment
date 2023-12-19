@@ -1,0 +1,125 @@
+.assessment_overview {
+  height: 160px;
+  padding: 20px;
+}
+.assessment_overview_text {
+  color: #1c4980;
+  font-size: 18px;
+  font-weight: 400;
+}
+.assessment_overview_container {
+  height: 110px;
+  min-width: max-content;
+  margin-top: 20px;
+  margin-right: 40px;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid #dadce0;
+  @media screen and (max-width: 1000px) {
+    height: 380px;
+    min-width: 80%;
+    margin-right: 20px !important;
+    flex-wrap: wrap;
+  }
+}
+.assessment_overview_container > :first-child {
+  @media screen and (max-width: 1000px) {
+    border-right: 1px solid #dadce0;
+  }
+}
+.first_card {
+  width: 15%;
+  padding: 15px;
+  min-width: max-content;
+  @media screen and (max-width: 1000px) {
+    min-width: 40%;
+  }
+}
+.first_card_text {
+  color: var(--text-100, #1c4980);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.first_card_information {
+  display: flex;
+  padding: 10px 0;
+}
+.first_card_count {
+  color: var(--text-100, #1c4980);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.second_card {
+  padding: 15px;
+  width: 30%;
+  border: 1px solid #dadce0;
+  border-top: none;
+  border-bottom: none;
+  min-width: max-content;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+.assessment_overview_container > :nth-last-child(-n + 2) {
+  @media screen and (max-width: 1000px) {
+    border-top: 1px solid #dadce0;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.second_card_text {
+  color: var(--text-100, #1c4980);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+}
+.second_card_information {
+  display: flex;
+  padding: 10px 0;
+}
+
+.category_cards {
+  display: flex;
+}
+.category_card_details {
+  margin: 0 20px;
+}
+@media screen and (max-width: 450px) {
+  .category_card_details {
+    margin: 0 10px;
+  }
+}
+.category_count {
+  color: var(--text-100, #1c4980);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+}
+.category_subcount {
+  color: var(--Status-Success, #05c165);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+.category_text {
+  color: #1c4980;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+.category_separator {
+  border-left: 1px solid#DADCE0;
+  height: 40px;
+}
