@@ -1,20 +1,22 @@
-import MobileLeftBar from "../MobileLeftbar/mobileLeftbar";
 import AssessmentBar from "./AssessmentBar/assessmentBar";
 import AssessmentCards from "./AssessmentCards/assessmentcards";
 import Header from "./Header/header";
 import styles from "./dashboard.module.css";
-
-export default function Dashboard() {
+import SwitchTab from "./Header/components/SwitchTabs/switchTabs";
+export default function Dashboard({setOpenForm}) {
     return (
         <div className={styles.dashboard_container}>
-            <MobileLeftBar/>
             <Header/>
-            <div className={styles.dashboard_subheading}>
-                <span className={styles.dashboard_subheading_text}>Assessments Overview</span>
+            <div className={styles.swtichTabMobile}>
+            <SwitchTab/>
             </div>
+            {/* <div className={styles.dashboard_subheading}>
+                <span className={styles.dashboard_subheading_text}>Assessments Overview</span>
+            </div> */}
             {/**TODO stats bar */}
+            
             <AssessmentBar/>
-            <AssessmentCards/>
+            <AssessmentCards setOpenForm={setOpenForm}/>
         </div>
     )
 }

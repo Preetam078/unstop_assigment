@@ -8,6 +8,7 @@ export default function AssessmentBar() {
             <div>
                 <span className={styles.assessment_text}>My Assessment</span>
             </div>
+            
             <div class={styles.assessment_icon_list}>
                 {
                     data.myAssessmentIcons.map((item, index)=> (

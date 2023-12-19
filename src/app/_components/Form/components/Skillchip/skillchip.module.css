@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 8px;
+    border-radius: 22px;
+    background:#DDEDFF;
+
+}
+.skillchip_text {
+    color:#1C4980;
+    font-size: 12px;
+    font-weight: 400;
+}
+.close_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+}

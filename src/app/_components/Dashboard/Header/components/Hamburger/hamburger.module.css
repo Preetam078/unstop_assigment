@@ -1,3 +1,9 @@
 .hamburger_container {
     display: none;
 }
+
+@media screen and (max-width: 650px)  {
+    .hamburger_container {
+        display: block;
+    }
+}

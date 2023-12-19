@@ -1,7 +1,6 @@
 .form_container {
-    display: none;
+    display: block;
     width: 591px;
-    height: 766px;
     background-color: #fff;
     z-index: 1;
     position: absolute;
@@ -10,7 +9,31 @@
     transform: translate(-50%, -50%); /*aligning the form in center*/
     border-radius: 8px;
     border: 1px solid #DADCE0;
+    animation: downToUp .2s linear ;
 }
+
+.modal_close{
+    animation: upToDown .2s linear ;
+}
+@keyframes upToDown {
+    0%{
+       
+        transform: translate(-50%, -50%);
+    }
+    100%{
+        transform: translate(-50%, 150%);
+    }
+}
+
+@keyframes downToUp {
+    0%{
+        transform: translate(-50%, 150%);
+    }
+    100%{
+        transform: translate(-50%, -50%);
+    }
+}
+
 .form_header {
     height: 70px;
     padding: 0px 30px;
@@ -27,6 +50,7 @@
 }
 .form_field_container {
     padding:0px 30px;
+    margin-bottom: 20px;
 }
 
 .input_container {
@@ -44,22 +68,23 @@
     width: 100%;
     height: 40px;
     color: #1C4980;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    transition: border-color 0.3s; /* Add a transition for a smooth effect */
 }
 
-.input_field:focus {
-    border: none;
+.input_field:focus, .skill_input_field:focus {
+    border: none !important;
+    outline: none;
 }
 
-.input_field::placeholder {
+.input_field::placeholder, .skill_input_field::placeholder {
     color: #8DA4BF;
     font-size: 14px;
     font-weight: 500;
 }
 
 .skill_container {
+    flex-direction: column;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -69,4 +94,38 @@
 .skill_chip_container {
     padding: 15px;
     gap:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillInput_container {
+    border-top: 1px solid #DDE5EA;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.skill_input_field {
+    width: calc(100% - 30px);
+    border: none;
+    height: 40px;
+    color: #1C4980;
+    font-size: 14px;
+    font-weight: 400;
+}
+.button_container {
+padding: 20px 30px;
+box-shadow: 0px -4px 50px 0px rgba(0, 0, 0, 0.09);
+}
+.save_button {
+    width: 100%;
+    padding: 0px 30px;
+    height: 40px;
+    background-color: #0073E6;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    text-transform: capitalize;
 }

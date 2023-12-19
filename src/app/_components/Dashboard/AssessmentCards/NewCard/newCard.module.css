@@ -1,7 +1,7 @@
 .new_card_container {
     background-color: #F6F8FA;
-    flex: 1 0 auto;
-    max-width: 388px;
+    flex: 1 1 auto;
+    min-width: 388px;
     border: 1px dashed #DADCE0;
     border-radius: 12px;
     display: flex;

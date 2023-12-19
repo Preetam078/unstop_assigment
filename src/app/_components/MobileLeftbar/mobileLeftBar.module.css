@@ -1,12 +1,22 @@
 .mobileleftbar_container {
-    display: none;
+    display: block;
     width: 315px;
     height: 100vh;
     background-color: #F2F8FE;
     z-index: 99;
     position: fixed;
     top: 0px;
+    left: 0px;
     padding: 0px 20px;
+    animation: leftToRight .6s linear;
+}
+@keyframes leftToRight {
+    0%{
+    transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 .menu_heading {
     margin-top: 40px;

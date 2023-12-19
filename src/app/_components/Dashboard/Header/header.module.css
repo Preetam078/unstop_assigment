@@ -2,6 +2,7 @@
     height: 70px;
     display: flex;
     align-items: center;
+    gap: 15px;
     border-bottom: 1px solid #DDE5EA;
     padding: 0px 20px;
 }
@@ -11,4 +12,21 @@
     font-style: normal;
     font-weight: 600;
     padding-right: 20px;
+}
+.swtichTabDesktop{
+    display: block;
+}
+.mobile_left_main_container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+@media screen and (max-width: 650px)  {
+    .swtichTabDesktop{
+        display: none;
+    }
 }

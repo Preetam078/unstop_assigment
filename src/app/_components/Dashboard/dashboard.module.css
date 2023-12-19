@@ -17,3 +17,13 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.swtichTabMobile{
+    display:none;
+}
+
+@media  screen and (max-width:650px) {
+    .swtichTabMobile{
+        display:block;
+    }
+}

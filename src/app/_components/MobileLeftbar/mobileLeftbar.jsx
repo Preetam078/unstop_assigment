@@ -2,12 +2,12 @@ import Tab from "./Tabs/tabs"
 import styles from "./mobileLeftBar.module.css"
 import data from "@/app/_data/data"
 
-export default function MobileLeftBar() {
+export default function MobileLeftBar({setOpenMobileMenu}) {
     return (
         <div className={styles.mobileleftbar_container}>
             <div className={styles.menu_heading}>
                 <span>Menu</span>
-                <div dangerouslySetInnerHTML={{ __html: data.cutIcon }} />
+                <div dangerouslySetInnerHTML={{ __html: data.cutIcon }} onClick={()=>{setOpenMobileMenu(false)}} />
             </div>
             <div className={styles.tabs_container}>
                 {

@@ -1,8 +1,7 @@
 import styles from "./card.module.css"
 
 export default function Card({data}) {
-    return (
-        <div>
+    return (  
             <div className={styles.card_container}>
                 <div className={styles.card_title}>
                     <div className={styles.heading}>
@@ -40,6 +39,5 @@ export default function Card({data}) {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
