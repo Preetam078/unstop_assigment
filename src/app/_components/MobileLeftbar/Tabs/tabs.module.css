@@ -1,0 +1,27 @@
+.tab_container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+}
+.icon_container {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.option_text {
+    color:#1C4980;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+.active_tab_container {
+    background-color: #E5F1FC;
+    border: 1px solid #0073E6;
+}
+.active_option_text {
+    color: #0073E6;
+}

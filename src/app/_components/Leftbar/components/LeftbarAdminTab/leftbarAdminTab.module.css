@@ -1,0 +1,21 @@
+.adminTab_container {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.admin_icon{
+    margin-top: 12px;
+}
+.tab_icon{
+    margin-top: 14px;
+}
+.tab_option{
+    margin-top: 6px;
+    width: 50px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    color: #1C4980;
+}

@@ -1,0 +1,105 @@
+.card_container {
+    width: 388px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DADCE0;
+    align-items: center;
+}
+.card_title {
+    width: calc(100% - 32px);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.heading {
+    color:#1C4980;
+    font-size: 18px;
+    font-weight: 400;
+}
+.event_detail {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.job_name {
+    color:#1C4980;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.icon_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.meta_data{
+    margin-left: 10px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+}
+.date {
+    margin-left: 4px;
+    color: #8DA4BF;
+    font-size: 12px;
+    font-weight: 400;
+}
+.option_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subdetails {
+    border-top: 1px dashed #DADCE0;
+    width: calc(100% - 32px);
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+}
+.assessment_data {
+    display: flex;
+    align-items: center;
+}
+.assessment_meta {
+    display: flex;
+    flex-direction: column;
+}
+.assessment_meta:nth-child(2) {
+    margin-left: 14px;
+}
+.numeric_val {
+    color:#1C4980;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+.numeric_name {
+    color:#1C4980;
+    font-size: 12px;
+    font-weight: 400;
+}
+.social_container {
+    display: flex;
+    align-items: center;
+}
+.avatar_container {
+    margin-left: 10px;
+}
+.people_container {
+    margin-left: 4px;
+    color: #1C4980;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}

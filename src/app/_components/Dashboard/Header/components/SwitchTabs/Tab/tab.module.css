@@ -1,0 +1,19 @@
+.tab_container{
+    margin: 0px 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.active_tab_container {
+    border-bottom: 3px solid #0073E6;
+}
+.tab_text {
+    display: none;
+    color:#3E6493;
+    font-size: 14px;
+    font-weight: 500;
+}
+.active_tab {
+    display: block;
+    color: #0073E6 !important ;
+}
