@@ -117,4 +117,7 @@
     .job_name{
         font-size: 12px;
     }
+    .people_container {
+        display: flex;
+    }
 }

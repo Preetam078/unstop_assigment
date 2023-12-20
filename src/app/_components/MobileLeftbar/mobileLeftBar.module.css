@@ -3,12 +3,12 @@
     width: 315px;
     height: 100vh;
     background-color: #F2F8FE;
-    z-index: 99;
+    z-index: 9;
     position: fixed;
     top: 0px;
     left: 0px;
     padding: 0px 20px;
-    animation: leftToRight .6s linear;
+    animation: leftToRight .2s linear;
 }
 @keyframes leftToRight {
     0%{

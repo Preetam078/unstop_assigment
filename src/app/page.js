@@ -20,7 +20,7 @@ export default function Home() {
         openForm && <div className={styles.form_main_container}><Form  setOpenForm={setOpenForm}/></div>
       }
       {
-        isMobile && <PlusIcon/>
+        isMobile && <PlusIcon setOpenForm={setOpenForm}/>
       }
      </div>
     </>
