@@ -26,4 +26,7 @@
     .swtichTabMobile{
         display:block;
     }
+    .dashboard_container {
+        margin: 0px;
+    }
 }

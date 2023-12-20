@@ -1,7 +1,22 @@
 .cards_container {
     margin-top: 16px;
     padding: 0px 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 20px;
+}
+
+@media screen and (min-width:500px) and (max-width: 799px) {
+    .cards_container {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+}
+@media screen and (min-width:800px) and (max-width: 1250px) {
+    .cards_container {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}
+@media screen and (min-width:1251px){
+    .cards_container {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
 }
