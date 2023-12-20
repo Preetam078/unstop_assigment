@@ -7,6 +7,7 @@ import { useState } from 'react'
 
 export default function Home() {
   const [openForm,setOpenForm]=useState(false)
+  console.log(openForm)
   return (
     <>
      <div className={styles.app_container}>

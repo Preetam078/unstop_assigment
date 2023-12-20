@@ -16,3 +16,10 @@
     /* display: flex; */
     display: none;
 }
+
+@media screen and (max-width: 650px) {
+    .assessment_icon_list {
+        display: flex; 
+    }
+    
+}

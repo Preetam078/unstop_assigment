@@ -5,14 +5,18 @@ import data from "@/app/_data/data"
 import { useState } from "react"
 
 export default function Form({setOpenForm}) {
+
+  function handleFormClose() {
+    setAddClass(styles.modal_close);
+    setOpenForm(false)
+  } 
+
   const [addClass,setAddClass]=useState(null)
   return (
     <div className={`${styles.form_container} ${addClass}}`}>
       <div className={styles.form_header}>
         <div className={styles.form_heading}>Create new assessment</div>
-        <div dangerouslySetInnerHTML={{ __html: data.cutForm }} onClick={()=>{
-          setAddClass(styles.modal_close);
-          setOpenForm(false)}} />
+        <div dangerouslySetInnerHTML={{ __html: data.cutForm }} onClick={handleFormClose} />
       </div>
       <form>
         <div className={styles.form_field_container}>

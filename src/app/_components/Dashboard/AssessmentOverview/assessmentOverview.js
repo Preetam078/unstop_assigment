@@ -5,27 +5,7 @@ import {
   candidates_score_card_details,
   candidates_source_score_card_details,
 } from "./constant";
-import { useState, useEffect } from "react";
-
-function useMediaQuery(query) {
-  const [matches, setMatches] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia(query);
-
-    // Function to update matches based on the media query
-    const updateMatches = () => setMatches(mediaQuery.matches);
-
-    // Initial check and setup listener
-    updateMatches();
-    mediaQuery.addListener(updateMatches);
-
-    // Cleanup: remove the listener when the component unmounts
-    return () => mediaQuery.removeListener(updateMatches);
-  }, [query]);
-
-  return matches;
-}
+import { useMediaQuery } from "../../customHook/useMediaQuery";
 
 export default function AssessmentOverview() {
   const isSmallScreen = useMediaQuery("(max-width: 1000px)");

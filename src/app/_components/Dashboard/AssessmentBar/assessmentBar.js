@@ -2,7 +2,7 @@ import AssessmentIcon from "./AssessmentIcon/assessmentIcon"
 import styles from "./assessmentBar.module.css"
 import data from "@/app/_data/data"
 
-export default function AssessmentBar() {
+export default function AssessmentBar({setOpenAssementOverview}) {
     return (
         <div className={styles.assessment_bar}>
             <div>
@@ -12,7 +12,7 @@ export default function AssessmentBar() {
             <div class={styles.assessment_icon_list}>
                 {
                     data.myAssessmentIcons.map((item, index)=> (
-                        <AssessmentIcon icon={item}/>
+                        <AssessmentIcon icon={item} setOpenAssementOverview={setOpenAssementOverview}/>
                     ))
                 }
             </div>
