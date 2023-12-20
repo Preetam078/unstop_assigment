@@ -42,6 +42,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.cross {
+    cursor: pointer;
+}
 .admin_option {
     color:#1C4980;
     font-size: 14px;

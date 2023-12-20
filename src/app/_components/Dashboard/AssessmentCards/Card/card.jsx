@@ -20,7 +20,6 @@ export default function Card({data}) {
                     </div>
                     <div className={styles.option_container} dangerouslySetInnerHTML={{ __html: data.optionIcon }} />
                 </div>
-                {/**sperator */}
                 <div className={styles.subdetails}>
                     <div className={styles.assessment_data}>
                         <div className={styles.assessment_meta}>

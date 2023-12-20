@@ -23,7 +23,7 @@ export default function Form({setOpenForm}) {
           }
         </div>
         {
-          isMobile == true? <div dangerouslySetInnerHTML={{ __html: data.mobileFormCut }} onClick={handleFormClose} />:<div dangerouslySetInnerHTML={{ __html: data.cutForm }} onClick={handleFormClose} />
+          isMobile == true? <div className={styles.cross} dangerouslySetInnerHTML={{ __html: data.mobileFormCut }} onClick={handleFormClose} />:<div className={styles.cross} dangerouslySetInnerHTML={{ __html: data.cutForm }} onClick={handleFormClose} />
         }
       </div>
       <form>

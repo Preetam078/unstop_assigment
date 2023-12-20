@@ -1,4 +1,6 @@
 "use client";
+
+// imported some components and hooks to be used
 import data from "@/app/_data/data";
 import styles from "./assessmentOverview.module.css";
 import {
@@ -8,8 +10,9 @@ import {
 import { useMediaQuery } from "../../customHook/useMediaQuery";
 
 export default function AssessmentOverview() {
+
+  //using custom hook to get the screen size
   const isSmallScreen = useMediaQuery("(max-width: 1000px)");
-  console.log(isSmallScreen);
 
   const firstCard = (title, icon, count) => (
     <div className={styles.first_card}>

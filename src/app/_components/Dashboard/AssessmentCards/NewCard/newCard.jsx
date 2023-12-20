@@ -3,6 +3,8 @@ import data from "@/app/_data/data"
 import "../../../../page.module.css"
 
 export default function NewCard({setOpenForm}) {
+
+    // handling the form open state
     function handleOpenForm() {
         setOpenForm(true);
     }

@@ -1,3 +1,4 @@
+//import all the small or reusable components for the Dashboard to used further.
 import AssessmentBar from "./AssessmentBar/assessmentBar";
 import AssessmentCards from "./AssessmentCards/assessmentcards";
 import AssessmentOverview from "./AssessmentOverview/assessmentOverview";
@@ -7,8 +8,12 @@ import SwitchTab from "./Header/components/SwitchTabs/switchTabs";
 import { useMediaQuery } from "../customHook/useMediaQuery";
 import { useState } from "react";
 import MobileSwitchTab from "./MobileSwitchtab/mobileSwitchtab";
+
+
 export default function Dashboard({setOpenForm}) {
+    // using custom hook to get the mobile size size
     const isMobile = useMediaQuery("(max-width: 650px)");
+
     const [openAssementOverview,setOpenAssementOverview]=useState(false)
     return (
         <div className={styles.dashboard_container}>
@@ -22,15 +27,15 @@ export default function Dashboard({setOpenForm}) {
                 }
             </div>
             <div>
+                
                 {
+                    // consditional component rendering 
                     !isMobile && <AssessmentOverview/>
                 }
                 {
+                    // conditional component rendering
                     openAssementOverview && isMobile && <AssessmentOverview/>
                 }
-			
-            {/**TODO stats bar */}
-            
             <AssessmentBar setOpenAssementOverview={setOpenAssementOverview}/>
             <AssessmentCards setOpenForm={setOpenForm}/>
             </div>

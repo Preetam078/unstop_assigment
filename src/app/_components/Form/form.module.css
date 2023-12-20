@@ -21,6 +21,10 @@
     }
 }
 
+.cross {
+    cursor: pointer;
+}
+
 .form_header {
     height: 70px;
     padding: 0px 30px;

@@ -1,4 +1,6 @@
 import styles from "./tabs.module.css"
+
+//seperate modular component for the each tab
 export default function Tab({data}) {
     return(
         <div className={`${styles.tab_container} ${data.option == "Assessment" ?styles.active_tab_container:""}`}>

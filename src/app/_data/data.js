@@ -1,3 +1,4 @@
+/* This Data will be shared across the components to show in the UI*/
 const data = {
       leftbar_tabs: [
             {

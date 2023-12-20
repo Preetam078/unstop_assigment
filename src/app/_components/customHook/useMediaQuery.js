@@ -1,6 +1,6 @@
 const { useState, useEffect } = require("react");
 
-
+// This is the custom hook for judging the window size of the physical device
 export function useMediaQuery(query) {
     const [matches, setMatches] = useState(false);
   

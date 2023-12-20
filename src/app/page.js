@@ -8,9 +8,9 @@ import PlusIcon from './_components/PlusIcon/plusIcon'
 import { useMediaQuery } from './_components/customHook/useMediaQuery'
 
 export default function Home() {
+  // using custom hook to get if the mobile size
   const isMobile = useMediaQuery("(max-width: 650px)");
   const [openForm,setOpenForm]=useState(false)
-  console.log(openForm)
   return (
     <>
      <div className={styles.app_container}>

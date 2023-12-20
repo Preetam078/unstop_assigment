@@ -7,10 +7,11 @@ export default function MobileLeftBar({setOpenMobileMenu}) {
         <div className={styles.mobileleftbar_container}>
             <div className={styles.menu_heading}>
                 <span>Menu</span>
-                <div dangerouslySetInnerHTML={{ __html: data.cutIcon }} onClick={()=>{setOpenMobileMenu(false)}} />
+                <div className={styles.cross} dangerouslySetInnerHTML={{ __html: data.cutIcon }} onClick={()=>{setOpenMobileMenu(false)}} />
             </div>
             <div className={styles.tabs_container}>
                 {
+                    // rendering the tab option available in leftbar mobile
                     data.leftbar_tabs.map((item, index) => (
                         <Tab key={index} data={item}/>
                     ))

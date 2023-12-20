@@ -1,5 +1,6 @@
 import styles from "./mobileSwitchtab.module.css"
 
+// UI for mobile size sub header..
 export default function MobileSwitchTab() {
     return (
         <div className={styles.container}>
