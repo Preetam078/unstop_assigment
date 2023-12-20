@@ -1,7 +1,8 @@
 .assessment_overview {
-  padding: 20px;
+  margin-left: 20px;
 }
 .assessment_overview_text {
+  padding-top: 20px;
   color: #1c4980;
   font-size: 18px;
   font-weight: 400;
@@ -94,7 +95,12 @@
 }
 @media screen and (max-width: 450px) {
   .category_card_details {
-    margin: 0 10px;
+    margin: 0 6px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .second_card{
+    padding: 6px;
   }
 }
 .category_count {
@@ -121,4 +127,10 @@
 .category_separator {
   border-left: 1px solid#DADCE0;
   height: 40px;
+}
+
+@media screen and (max-width:650px) {
+  .assessment_overview_text {
+    display: none;
+  }
 }

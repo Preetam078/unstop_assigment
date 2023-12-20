@@ -29,4 +29,7 @@
     .swtichTabDesktop{
         display: none;
     }
+    .header_container {
+        border: none;
+    }
 }

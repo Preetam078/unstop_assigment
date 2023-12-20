@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 2px solid #F6F8FA;
+}
+.tab {
+    padding: 20px 0px;
+    width: 50%;
+    text-align: center;
+    color: #3E6493;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.activeTab{
+    color:#0073E6;
+    border-bottom: 2px solid #0073E6 !important;
+}

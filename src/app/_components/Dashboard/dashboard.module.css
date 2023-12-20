@@ -21,6 +21,11 @@
 .swtichTabMobile{
     display:none;
 }
+.sticky_header {
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
 
 @media  screen and (max-width:650px) {
     .swtichTabMobile{

@@ -1,0 +1,9 @@
+.plus_icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 3;
+}
+.plus_icon_container {
+    position: sticky;
+}

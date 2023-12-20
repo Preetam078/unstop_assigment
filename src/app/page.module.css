@@ -1,7 +1,6 @@
 .app_container{ 
   background-color: #F6F8FA;
   display: flex;
-  overflow-y: hidden;
 }
 
 .form_main_container{

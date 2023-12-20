@@ -6,18 +6,21 @@ import styles from "./dashboard.module.css";
 import SwitchTab from "./Header/components/SwitchTabs/switchTabs";
 import { useMediaQuery } from "../customHook/useMediaQuery";
 import { useState } from "react";
+import MobileSwitchTab from "./MobileSwitchtab/mobileSwitchtab";
 export default function Dashboard({setOpenForm}) {
     const isMobile = useMediaQuery("(max-width: 650px)");
     const [openAssementOverview,setOpenAssementOverview]=useState(false)
     return (
         <div className={styles.dashboard_container}>
-            <Header/>
-            <div className={styles.swtichTabMobile}>
-            <SwitchTab/>
+            <div className={styles.sticky_header}>
+                <Header/>
+                <div className={styles.swtichTabMobile}>
+                <SwitchTab/>
+                </div>
+                {
+                    isMobile && <MobileSwitchTab/>
+                }
             </div>
-            {/* <div className={styles.dashboard_subheading}>
-                <span className={styles.dashboard_subheading_text}>Assessments Overview</span>
-            </div> */}
             <div>
                 {
                     !isMobile && <AssessmentOverview/>

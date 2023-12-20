@@ -1,3 +1,8 @@
 .switchtabs_container {
     display: flex;
 }
+@media screen and (max-width: 650px) {
+    .switchtabs_container {
+        display: none;
+    }
+}
