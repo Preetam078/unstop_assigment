@@ -12,7 +12,7 @@ export default function AssessmentBar({setOpenAssementOverview}) {
             <div class={styles.assessment_icon_list}>
                 {
                     data.myAssessmentIcons.map((item, index)=> (
-                        <AssessmentIcon icon={item} setOpenAssementOverview={setOpenAssementOverview}/>
+                        <AssessmentIcon key = {index} icon={item} setOpenAssementOverview={setOpenAssementOverview}/>
                     ))
                 }
             </div>
